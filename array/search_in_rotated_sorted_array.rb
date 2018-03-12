@@ -27,3 +27,6 @@ class Search_in_Rotated_Sorted_Array
     nums[left] == target ? left : -1
   end
 end
+
+s = Search_in_Rotated_Sorted_Array.new
+p s.search_rotated( [ 4 ,5 ,6, 7 ,0, 1, 2],2)
