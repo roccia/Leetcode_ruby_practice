@@ -7,6 +7,14 @@ class TreeNode
     @left = nil
     @right = nil
   end
+
+  def to_ary
+    temp = []
+    temp += @left.to_a if @left
+    temp << @value
+    temp += @right.to_a if @right
+    temp
+  end
 end
 
 class ConstructBST
@@ -36,11 +44,12 @@ class ConstructBST
     # 右子树对应的前序遍历的位置在[ps+index-is+1, pe]
     # 右子树对应的中序遍历的位置在[index+1, ie]
     new_tree.right = build(pre_order, pre_start + index - in_start +1, pre_end, in_order, index+1, in_end)
-    new_tree
+    new_tree.to_ary
   end
 end
 
 t = ConstructBST.new
-pre_order= [1, 2, 4, 7, 3, 5, 6, 8]
-in_order = [4, 7, 2, 1, 5, 3, 8, 6]
-t.reconstruct(pre_order, in_order)
+pre_order= [3,9,20,15,7]
+in_order = [9,3,15,20,7]
+res = t.reconstruct(pre_order, in_order)
+p res

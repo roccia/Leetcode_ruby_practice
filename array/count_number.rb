@@ -10,18 +10,18 @@ class CountNumber
 
   def countNumber(nums)
     count = 0
-    n = nums.size
+    rows = nums.size
 
     # Write your code here
-    m = nums[0].size
-    i = 0
-    j = m - 1
-    while j >= 0 and i < n :
-      if nums[i][j] < 0
-        count += j + 1
-        i+=1
+    cols = nums[0].size
+    row = 0
+    col = rows - 1
+    while j >= 0 and row < rows :
+      if nums[row][col] < 0
+        count += col + 1
+        row+=1  #向下移动
       else
-        j -= 1
+        col -= 1  #向左移动
       end
     end
     count
