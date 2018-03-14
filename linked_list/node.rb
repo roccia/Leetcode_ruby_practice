@@ -11,6 +11,3 @@ class Node
     end
 end
 
-class LinkedList
-
-end
