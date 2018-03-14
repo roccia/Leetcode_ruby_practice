@@ -42,6 +42,7 @@ class CountNumber
   end
 
 
+
 end
 
 ary = [
