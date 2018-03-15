@@ -58,7 +58,6 @@ class SortAlg
   end
 
   def binary_search_recursive(ary,target)
-      return nil if target.nil?
       first = 0
       last = ary.size - 1
       return nil if ary.size.zero?

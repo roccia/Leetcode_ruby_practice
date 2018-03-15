@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a0eed7e-ddaa-4f17-a1a4-2d58427c7037" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/queue/stack_queue.rb" afterPath="$PROJECT_DIR$/queue/stack_queue.rb" />
-    </list>
+    <list default="true" id="3a0eed7e-ddaa-4f17-a1a4-2d58427c7037" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +10,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@linked_list.coverage" NAME="linked_list Coverage Results" MODIFIED="1521004684383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked_list" MODULE_NAME="Leetcode_ruby_practice" />
+    <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@construct_bst.coverage" NAME="construct_bst Coverage Results" MODIFIED="1521091538701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BinarySearchTree" MODULE_NAME="Leetcode_ruby_practice" />
+    <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@linked_list.coverage" NAME="linked_list Coverage Results" MODIFIED="1521091329132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/linked_list" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@count_number.coverage" NAME="count_number Coverage Results" MODIFIED="1521018802214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@two_sum_21061222.coverage" NAME="two_sum_21061222 Coverage Results" MODIFIED="1483693667164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@two_sum_21061221.coverage" NAME="two_sum_21061221 Coverage Results" MODIFIED="1482395772875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Leetcode_ruby_practice" />
@@ -32,8 +31,8 @@
       <file leaf-file-name="linked_list.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linked_list/linked_list.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
+            <state relative-caret-position="-336">
+              <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -42,8 +41,8 @@
       <file leaf-file-name="heap_sort.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heap/heap_sort.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state relative-caret-position="735">
+              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -62,18 +61,28 @@
       <file leaf-file-name="construct_bst.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BinarySearchTree/construct_bst.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="172">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="climb_stairs.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math/climb_stairs.rb">
+      <file leaf-file-name="bst.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinarySearchTree/bst.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="478">
+              <caret line="104" column="19" lean-forward="false" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sort_alg.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/array/sort_alg.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -84,16 +93,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stack_queue.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/queue/stack_queue.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -122,11 +121,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="merge_sort.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="merge_sort.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linked_list/merge_sort.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state relative-caret-position="417">
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -157,7 +156,6 @@
         <option value="$PROJECT_DIR$/two_sum_21061222.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/array/bubble_sort.rb" />
-        <option value="$PROJECT_DIR$/array/sort_alg.rb" />
         <option value="$PROJECT_DIR$/math/fibonacci.rb" />
         <option value="$PROJECT_DIR$/linked_list/merge_sort.rb" />
         <option value="$PROJECT_DIR$/linked_list/node.rb" />
@@ -165,10 +163,11 @@
         <option value="$PROJECT_DIR$/array/count_number.rb" />
         <option value="$PROJECT_DIR$/array/check_pair.rb" />
         <option value="$PROJECT_DIR$/heap/heap_sort.rb" />
-        <option value="$PROJECT_DIR$/BinarySearchTree/construct_bst.rb" />
         <option value="$PROJECT_DIR$/math/climb_stairs.rb" />
-        <option value="$PROJECT_DIR$/linked_list/linked_list.rb" />
         <option value="$PROJECT_DIR$/queue/stack_queue.rb" />
+        <option value="$PROJECT_DIR$/linked_list/linked_list.rb" />
+        <option value="$PROJECT_DIR$/BinarySearchTree/construct_bst.rb" />
+        <option value="$PROJECT_DIR$/array/sort_alg.rb" />
       </list>
     </option>
   </component>
@@ -179,8 +178,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="207" />
-    <option name="y" value="58" />
+    <option name="x" value="661" />
+    <option name="y" value="100" />
     <option name="width" value="1718" />
     <option name="height" value="983" />
   </component>
@@ -264,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.climb_stairs">
+  <component name="RunManager" selected="Ruby.construct_bst">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -436,6 +435,24 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/math/climb_stairs.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
+    <configuration name="construct_bst" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Leetcode_ruby_practice" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/BinarySearchTree" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/BinarySearchTree/construct_bst.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+    </configuration>
     <configuration name="count_number" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Leetcode_ruby_practice" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -452,24 +469,6 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/array/count_number.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-    </configuration>
-    <configuration name="largest_sum_contiguous_subarray" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="Leetcode_ruby_practice" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/array" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/array/largest_sum_contiguous_subarray.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <configuration name="linked_list" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -491,19 +490,19 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.largest_sum_contiguous_subarray" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.linked_list" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.check_pair" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.count_number" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.climb_stairs" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.linked_list" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.check_pair" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.count_number" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.climb_stairs" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.construct_bst" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.climb_stairs" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.count_number" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.check_pair" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.largest_sum_contiguous_subarray" />
-        <item index="4" class="java.lang.String" itemvalue="Ruby.linked_list" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.construct_bst" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.linked_list" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.climb_stairs" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.count_number" />
+        <item index="4" class="java.lang.String" itemvalue="Ruby.check_pair" />
       </list>
     </recent_temporary>
   </component>
@@ -523,15 +522,15 @@
       <workItem from="1484551392659" duration="6000" />
       <workItem from="1520950843320" duration="2012000" />
       <workItem from="1520993200041" duration="16124000" />
-      <workItem from="1521079499609" duration="6531000" />
+      <workItem from="1521079499609" duration="8007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37593000" />
+    <option name="totallyTimeSpent" value="39069000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="207" y="58" width="1718" height="983" extended-state="0" />
+    <frame x="661" y="100" width="1718" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22016707" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -705,42 +704,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/array/sort_alg.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BinarySearchTree/tree_node.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BinarySearchTree/construct_bst.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/math/climb_stairs.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list/linked_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="99" column="16" lean-forward="true" selection-start-line="99" selection-start-column="16" selection-end-line="99" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -780,18 +747,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heap/heap_sort.rb">
+    <entry file="file://$PROJECT_DIR$/linked_list/merge_sort.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="32" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state relative-caret-position="417">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linked_list/merge_sort.rb">
+    <entry file="file://$PROJECT_DIR$/linked_list/linked_list.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+        <state relative-caret-position="-336">
+          <caret line="32" column="19" lean-forward="true" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heap/heap_sort.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinarySearchTree/tree_node.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinarySearchTree/construct_bst.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinarySearchTree/bst.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="104" column="19" lean-forward="false" selection-start-line="104" selection-start-column="19" selection-end-line="104" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/array/sort_alg.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
           <folding />
         </state>
       </provider>

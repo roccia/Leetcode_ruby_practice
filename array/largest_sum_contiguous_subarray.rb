@@ -15,7 +15,7 @@ class LargestSumContiguousSubarray
   def max_sub_array_sum(ary)
     max_so_far =  ary[0]
     current_max = ary[0]
-    1.upto(ary.size - 1)  do |i|
+    (1.. ary.size-1).each  do |i|
       current_max = 0 if current_max < 0
       current_max += ary[i]
       max_so_far = current_max if max_so_far < current_max
