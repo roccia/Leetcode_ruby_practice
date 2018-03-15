@@ -14,7 +14,21 @@ class CheckPair
        end
   end
 
-
+  def check_pair_dp(ary,target)
+      return 0 if ary.size < 1
+      sum = 0
+      count = 0
+      hash = hash.new
+      hash[0] = 1
+      (ary.size - 1 ).downto(0) do |i|
+         sum += ary[i]
+         if hash.has_key?(sum - target)
+            count += hash[sum-target]
+         end
+          hash[sum] = hash.fetch(sum,0) + 1
+      end
+      count
+  end
 end
 
 

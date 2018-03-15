@@ -31,7 +31,7 @@ class ConstructBST
       index +=1
     end
 
-    throw(RuntimeError, 'aaa') if index > in_end
+    return 'error' if index > in_end
 
     new_tree = TreeNode.new(root) #创建当前的根结点，并且为结点赋值
 
