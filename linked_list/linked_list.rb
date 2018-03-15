@@ -16,21 +16,25 @@ class LinkedList < Node
 
   def initialize
     @head = nil
+    @tail = nil
   end
 
   def add(value)
-    current_node = @head
-    while current_node.next
-      current_node = current_node.next
+    current = Node.new(value)
+    if !@head
+      @head = current
+      @tail = current
+    else
+      @tail.next = current
+      @tail = current
     end
-    current_node.next = Node.new(value)
   end
 
   def delete(value)
     if @head.value == value
       @head = @head.next
     else
-      while (!@head.next?) && (@head.next.value != value)
+      while (@head.next?) && (@head.next.value != value)
         @head = @head.next
       end
       unless @head.next?

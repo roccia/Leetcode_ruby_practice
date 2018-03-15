@@ -7,7 +7,7 @@ class SortAlg
       (n-1).times do |i|
         if ary[i] > ary[i+1]
           ary[i], ary[i+1] = ary[i+1], ary[i]
-          swapped = trie
+          swapped = true
         end
       end
       break unless swapped
