@@ -19,7 +19,7 @@ class CheckPair
     sum = 0
     count = 0
     temp = sum - target
-    hash = hash.new
+    hash = {}
     hash[0] = 1
     (ary.size - 1).downto(0) do |i|
       sum += ary[i]
