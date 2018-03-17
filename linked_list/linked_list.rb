@@ -83,16 +83,37 @@ class LinkedList < Node
     slow
   end
 
-
-def print_list(head)
-  result = []
-  current = head
-  while !current.nil?
-    result << current.value
-    current = current.next
+  def find_node(value)
+     current_node = @head
+     while !current_node.nil?
+       return current_node if current_node.value == value
+       current_node = current_node.next
+     end
+    'can not find '
   end
-  result
-end
+
+  def reverse_list
+      current_node = @head
+      prev_node = nil
+      until current_node.nil?
+         next_node = current_node.next
+        current_node.next = prev_node
+        prev_node = current_node
+        current_node = next_node
+      end
+      @head = prev_node
+  end
+
+
+  def print_list(head)
+    result = []
+    current = head
+    while !current.nil?
+      result << current.value
+      current = current.next
+    end
+    result
+  end
 
 end
 
@@ -104,7 +125,9 @@ list1.add(20)
 list1.add(3)
 list1.add(2)
 head1 = list1.head
+p list1.print_list(list1.head)
 
+p list1.reverse_list
 list2 = LinkedList.new
 list2.add(1)
 list2.add(6)
@@ -118,13 +141,12 @@ head2 = list2.head
 #list2.print_list(head2)
 list1.head = list1.sort(head1)
 list2.head = list2.sort(head2)
-p list1.print_list(list1.head)
-p list2.print_list(list2.head)
+ list1.print_list(list1.head)
+ list2.print_list(list2.head)
 
 list3 = LinkedList.new
-p list3.head = list3.merge(list1.head,list2.head)
-p list3.print_list(list3.head)
-
+list3.head = list3.merge(list1.head, list2.head)
+list3.print_list(list3.head)
 
 
 #new_list.print_list(new_list.head)

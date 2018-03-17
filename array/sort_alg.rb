@@ -7,7 +7,7 @@ class SortAlg
       (n-1).times do |i|
         if ary[i] > ary[i+1]
           ary[i], ary[i+1] = ary[i+1], ary[i]
-          swapped = trie
+          swapped = true
         end
       end
       break unless swapped
@@ -57,22 +57,20 @@ class SortAlg
     'not found'
   end
 
-  def binary_search_recursive(ary,target)
-      return nil if target.nil?
-      first = 0
-      last = ary.size - 1
-      return nil if ary.size.zero?
-      i = (first+last)/2
-      if ary[i] == target
-         return 'found'
-      elsif ary[i] < target
-         binary_search_recursive(ary[i+1,last],target)
-      else
-         binary_search_recursive(ary[first,i],target)
-      end
+  def binary_search_recursive(ary, target)
+    return nil if ary.size.zero?
+    first = 0
+    last = ary.size - 1
+    i = (first+last)/2
+    if ary[i] == target
+      return 'found'
+    elsif ary[i] < target
+      binary_search_recursive(ary[i+1, last], target)
+    else
+      binary_search_recursive(ary[first, i], target)
+    end
 
   end
-
 
 
 end

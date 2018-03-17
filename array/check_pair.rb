@@ -4,6 +4,7 @@ class CheckPair
 
   def check_pair(ary,target)
        return 0 if ary.size <= 1
+
        hash = Hash.new
        (ary.size-1).downto(0) do |i|
            temp = target - ary[i]
@@ -12,6 +13,23 @@ class CheckPair
            end
          hash[ary[i]] = 1
        end
+
+  end
+
+  def check_pair_b(ary,target)
+    return 0 if ary.size < 1
+    sum = 0
+    count = 0
+    hash = Hash.new
+    hash[0] = 1
+    (ary.size-1).downto(0) do |i|
+      sum += ary[i]
+      if hash.has_key?(sum-target)
+         count += hash[sum-target]
+      end
+      hash[sum] = hash.fetch(sum,0) + 1
+    end
+     count
   end
 
 
@@ -20,4 +38,5 @@ end
 
  c = CheckPair.new
 p ary = [1,2,3,4,5,6]
-p c.check_pair(ary,6)
+ c.check_pair(ary,7)
+p c.check_pair_b(ary,7)
