@@ -34,7 +34,7 @@ class LinkedList < Node
     if @head.value == value
       @head = @head.next
     else
-      while (!@head.next?) && (@head.next.value != value)
+      while (@head.next?) && (@head.next.value != value)
         @head = @head.next
       end
       unless @head.next?
@@ -45,8 +45,8 @@ class LinkedList < Node
   def sort(head)
     return head if (head.nil? || !head.next?)
     middle = get_middle(head) #get the middle of the list
-    next_of_middle = middle.next #set the next of middle node to null
-    middle.next = nil
+    next_of_middle = middle.next
+    middle.next = nil #set the next of middle node to null
     left = sort(head)
     right = sort(next_of_middle)
     merge(left, right)
@@ -66,6 +66,13 @@ class LinkedList < Node
     result
   end
 
+  #对单链表进行归并排序：首先设置两个指针slow和fast，slow指针每次走一步，
+  # fast指针每次走两步，当fast指向末尾元素或者指向空时，
+  # slow指针刚好走到链表的中间位置，此时slow指针恰好把链表分为左右两部分，
+  # slow->next指针指向第二部分的首部，然后我们递归的对两部分进行划分操作，
+  # 最后划分到两部分都只有一个元素时，我们对其进行合并操作，
+  # 然后依次递归的向上进行归并操作。时间复杂度为o(nlogn)。
+
   def get_middle(head)
     return head if head.nil?
     fast = head.next
@@ -76,7 +83,7 @@ class LinkedList < Node
     while !fast.nil?
       fast = fast.next
       if !fast.nil?
-        slow = slow.next
+        slow = slow.next #第二部分的首部
         fast = fast.next
       end
     end
@@ -92,18 +99,6 @@ class LinkedList < Node
     'can not find '
   end
 
-  def reverse_list
-      current_node = @head
-      prev_node = nil
-      until current_node.nil?
-         next_node = current_node.next
-        current_node.next = prev_node
-        prev_node = current_node
-        current_node = next_node
-      end
-      @head = prev_node
-  end
-
 
   def print_list(head)
     result = []
@@ -113,6 +108,39 @@ class LinkedList < Node
       current = current.next
     end
     result
+  end
+
+  def swap(head)
+    if head && head.next
+      next_node = head.next
+      head.next = swap(next_node.next)
+      next_node.next = head
+      next_node
+    end
+    head
+  end
+
+
+  def reverse_list
+    current_node = @head
+    prev_node = nil
+    while current_node
+      next_node = current_node.next
+      current_node.next = prev_node
+      prev_node = current_node
+      current_node = next_node
+    end
+    @head = prev_node
+  end
+
+  def reverse_list_recursive(node=@head, prev=nil)
+    if !node
+      return @head = prev
+    else
+      next_node = node.next
+      node.next = prev
+      reverse_list_recursive(next_node, node)
+    end
   end
 
 end
@@ -141,12 +169,12 @@ head2 = list2.head
 #list2.print_list(head2)
 list1.head = list1.sort(head1)
 list2.head = list2.sort(head2)
- list1.print_list(list1.head)
- list2.print_list(list2.head)
+p list1.print_list(list1.head)
+p list2.print_list(list2.head)
 
 list3 = LinkedList.new
-list3.head = list3.merge(list1.head, list2.head)
-list3.print_list(list3.head)
+p list3.head = list3.merge(list1.head, list2.head)
+p list3.print_list(list3.head)
 
 
 #new_list.print_list(new_list.head)

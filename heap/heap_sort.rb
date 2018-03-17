@@ -21,16 +21,16 @@ class HeapSort
     ele_max
   end
 
-  def k_min(nums,k)
+  def k_min(nums, k)
     new_ary = []
     nums.each do |n|
-       if new_ary.size < k
-           new_ary << n
-       else
-          new_ary =  build_max_heap(new_ary)
-          next if n >= new_ary[0]
-          new_ary[0] = n
-       end
+      if new_ary.size < k
+        new_ary << n
+      else
+        new_ary = build_max_heap(new_ary)
+        next if n >= new_ary[0]
+        new_ary[0] = n
+      end
     end
     new_ary
   end
@@ -43,7 +43,6 @@ class HeapSort
   end
 
 
-
   def build_max_heap(keys)
     (keys.size/2-1).downto(0) do |i|
       max_heapify(keys, keys.size, i)
@@ -54,14 +53,17 @@ class HeapSort
   def max_heapify(keys, size, i)
     l = 2*i+1
     r = 2*i+2
+
     if l < size and keys[l] > keys[i]
       largest = l
     else
       largest = i
     end
+
     if r < size and keys[r] > keys[largest]
       largest = r
     end
+
     if largest != i
       keys[i], keys[largest] = keys[largest], keys[i]
       max_heapify(keys, size, largest)
@@ -71,12 +73,12 @@ class HeapSort
 end
 
 h = HeapSort.new
-ary = [9, 4, 5, 2, 1, 23, 55, 88, 74,89]
+ary = [9, 4, 5, 2, 1, 23, 55, 88, 74, 89]
 ary1 = [4, 5, 1, 6, 2, 7, 3, 8]
 
 
 #h.heap_sort(ary1)
 # h.k_largest(ary, 3)
 
- p h.k_min(ary,4)
+p h.k_min(ary, 4)
 #p  h.extract_max(ary,4)
