@@ -13,9 +13,20 @@ class ArrayPartition
        end
     end
     result
-
   end
 
+
+   def array_sum(nums)
+     sorted_array = nums.sort
+     sum = 0
+     i = 0
+     while i < sorted_array.size
+       sum += sorted_array[i]
+       i += 2
+     end
+
+     sum
+   end
 end
 
 a = ArrayPartition.new
