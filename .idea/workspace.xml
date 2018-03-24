@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a0eed7e-ddaa-4f17-a1a4-2d58427c7037" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Leetcode_ruby_practice.iml" afterPath="$PROJECT_DIR$/.idea/Leetcode_ruby_practice.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,10 +21,11 @@
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@climb_stairs.coverage" NAME="climb_stairs Coverage Results" MODIFIED="1521090202724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/math" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@array_partition.coverage" NAME="array_partition Coverage Results" MODIFIED="1521303410867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@two_sum_21061222.coverage" NAME="two_sum_21061222 Coverage Results" MODIFIED="1483693667164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="Leetcode_ruby_practice" />
+    <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@group_anagrams.coverage" NAME="group_anagrams Coverage Results" MODIFIED="1521901063054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_table" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@longest_substring_without_repeating_characters.coverage" NAME="longest_substring_without_repeating_characters Coverage Results" MODIFIED="1521713333867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_table" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@fibonacci.coverage" NAME="fibonacci Coverage Results" MODIFIED="1520997268439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/math" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@largest_sum_contiguous_subarray.coverage" NAME="largest_sum_contiguous_subarray Coverage Results" MODIFIED="1521092941905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array" MODULE_NAME="Leetcode_ruby_practice" />
-    <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@count_primes.coverage" NAME="count_primes Coverage Results" MODIFIED="1521821043197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_table" MODULE_NAME="Leetcode_ruby_practice" />
+    <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@count_primes.coverage" NAME="count_primes Coverage Results" MODIFIED="1521821854474" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hash_table" MODULE_NAME="Leetcode_ruby_practice" />
     <SUITE FILE_PATH="coverage/Leetcode_ruby_practice@check_pair.coverage" NAME="check_pair Coverage Results" MODIFIED="1521382060625" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/array" MODULE_NAME="Leetcode_ruby_practice" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -59,18 +59,28 @@
       <file leaf-file-name="longest_substring_without_repeating_characters.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hash_table/longest_substring_without_repeating_characters.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
+            <state relative-caret-position="480">
               <caret line="32" column="14" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="32" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="count_primes.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="count_primes.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hash_table/count_primes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+            <state relative-caret-position="195">
+              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group_anagrams.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hash_table/group_anagrams.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -111,16 +121,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1155">
               <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search_in_rotated_sorted_array.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/array/search_in_rotated_sorted_array.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -178,6 +178,7 @@
         <option value="$PROJECT_DIR$/hash_table/top_k_frequent_elements.rb" />
         <option value="$PROJECT_DIR$/hash_table/longest_substring_without_repeating_characters.rb" />
         <option value="$PROJECT_DIR$/hash_table/count_primes.rb" />
+        <option value="$PROJECT_DIR$/hash_table/group_anagrams.rb" />
       </list>
     </option>
   </component>
@@ -188,8 +189,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="367" />
-    <option name="y" value="101" />
+    <option name="x" value="397" />
+    <option name="y" value="68" />
     <option name="width" value="1440" />
     <option name="height" value="809" />
   </component>
@@ -211,7 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,6 +258,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -278,7 +279,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Ruby.count_primes">
+  <component name="RunManager" selected="Ruby.group_anagrams">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -414,24 +415,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="array_partition" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
-      <module name="Leetcode_ruby_practice" />
-      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/array" />
-      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/array/array_partition.rb" />
-      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
-    </configuration>
     <configuration name="check_pair" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="Leetcode_ruby_practice" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -466,6 +449,24 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/hash_table/count_primes.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+    </configuration>
+    <configuration name="group_anagrams" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="Leetcode_ruby_practice" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/hash_table" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/hash_table/group_anagrams.rb" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <configuration name="longest_substring_without_repeating_characters" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
@@ -505,19 +506,19 @@
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Ruby.array_partition" />
-      <item index="1" class="java.lang.String" itemvalue="Ruby.check_pair" />
-      <item index="2" class="java.lang.String" itemvalue="Ruby.top_k_frequent_elements" />
-      <item index="3" class="java.lang.String" itemvalue="Ruby.longest_substring_without_repeating_characters" />
-      <item index="4" class="java.lang.String" itemvalue="Ruby.count_primes" />
+      <item index="0" class="java.lang.String" itemvalue="Ruby.check_pair" />
+      <item index="1" class="java.lang.String" itemvalue="Ruby.top_k_frequent_elements" />
+      <item index="2" class="java.lang.String" itemvalue="Ruby.longest_substring_without_repeating_characters" />
+      <item index="3" class="java.lang.String" itemvalue="Ruby.count_primes" />
+      <item index="4" class="java.lang.String" itemvalue="Ruby.group_anagrams" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Ruby.count_primes" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.longest_substring_without_repeating_characters" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.top_k_frequent_elements" />
-        <item index="3" class="java.lang.String" itemvalue="Ruby.check_pair" />
-        <item index="4" class="java.lang.String" itemvalue="Ruby.array_partition" />
+        <item index="0" class="java.lang.String" itemvalue="Ruby.group_anagrams" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.count_primes" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.longest_substring_without_repeating_characters" />
+        <item index="3" class="java.lang.String" itemvalue="Ruby.top_k_frequent_elements" />
+        <item index="4" class="java.lang.String" itemvalue="Ruby.check_pair" />
       </list>
     </recent_temporary>
   </component>
@@ -545,27 +546,28 @@
       <workItem from="1521535264777" duration="466000" />
       <workItem from="1521618054030" duration="3037000" />
       <workItem from="1521706377550" duration="3683000" />
-      <workItem from="1521818317861" duration="1013000" />
+      <workItem from="1521818317861" duration="1163000" />
+      <workItem from="1521900431659" duration="817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55120000" />
+    <option name="totallyTimeSpent" value="56087000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="367" y="101" width="1440" height="809" extended-state="0" />
+    <frame x="397" y="68" width="1440" height="809" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20171674" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20457797" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3669468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3669468" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19371197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39858013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19327731" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39858013" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -595,14 +597,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BinarySearchTree/construct_bst.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BinarySearchTree/bst.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
@@ -622,7 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="26" lean-forward="true" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -688,7 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="14" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -831,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -839,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -847,7 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -917,7 +905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hash_table/longest_substring_without_repeating_characters.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
+        <state relative-caret-position="480">
           <caret line="32" column="14" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="32" selection-end-column="14" />
           <folding />
         </state>
@@ -925,8 +913,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hash_table/count_primes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        <state relative-caret-position="195">
+          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hash_table/group_anagrams.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding />
         </state>
       </provider>
