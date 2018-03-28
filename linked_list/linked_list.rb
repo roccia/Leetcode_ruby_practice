@@ -91,11 +91,11 @@ class LinkedList < Node
   end
 
   def find_node(value)
-     current_node = @head
-     while !current_node.nil?
-       return current_node if current_node.value == value
-       current_node = current_node.next
-     end
+    current_node = @head
+    while !current_node.nil?
+      return current_node if current_node.value == value
+      current_node = current_node.next
+    end
     'can not find '
   end
 
@@ -141,6 +141,28 @@ class LinkedList < Node
       node.next = prev
       reverse_list_recursive(next_node, node)
     end
+  end
+
+  def add_two_numbers(l1, l2)
+    dummy = result = ListNode.new(carry = 0)
+    while l1 && l2
+      tmp = l1.val + l2.val + carry
+      carry = tmp >9 ? 1 : 0
+      value = tmp >9 ? tmp - 10 : tmp
+
+      result.next = ListNode.new(value)
+      result = result.next
+      l1 = l1.next
+      l2 = l2.next
+    end
+
+    if carry == 0
+      result.next = l1 || l2
+    else
+      result.next = add_two_numbers(l1||l2, ListNode.new(1))
+    end
+    dummy.next
+
   end
 
 end
