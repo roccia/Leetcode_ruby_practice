@@ -57,21 +57,20 @@ class SortAlg
     'not found'
   end
 
-  def binary_search_recursive(ary,target)
-      first = 0
-      last = ary.size - 1
-      return nil if ary.size.zero?
-      i = (first+last)/2
-      if ary[i] == target
-         return 'found'
-      elsif ary[i] < target
-         binary_search_recursive(ary[i+1,last],target)
-      else
-         binary_search_recursive(ary[first,i],target)
-      end
+  def binary_search_recursive(ary, target)
+    return nil if ary.size.zero?
+    left = 0
+    right = ary.size - 1
+    mid = (first+last)/2
+    if ary[mid] == target
+      return 'found'
+    elsif ary[mid] < target
+      binary_search_recursive(ary[mid+1, right], target)
+    else
+      binary_search_recursive(ary[left, mid], target)
+    end
 
   end
-
 
 
 end

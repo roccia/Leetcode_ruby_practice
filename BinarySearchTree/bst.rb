@@ -64,7 +64,7 @@ class BST < TreeNode
   def find_min_node(node)
     if node.left.nil?
       min_node = node
-      return min_node
+      min_node
     else
       find_min_node(node.left)
     end

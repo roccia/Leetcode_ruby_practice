@@ -23,6 +23,8 @@ class GroupAnagrams
 
   def group_anagrams(strs)
     hash = strs.each_with_object(Hash.new []) do |word, hash|
+      p hash
+      p word
       hash[word.chars.sort] += [word]
     end
     hash.values

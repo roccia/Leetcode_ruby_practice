@@ -36,4 +36,4 @@ class LongestSubstringWithoutRepeatingCharacters
 end
 
 l = LongestSubstringWithoutRepeatingCharacters.new
-p l.length_of_longest_substring('abba')
+p l.length_of_longest_substring('abbacedffg')
