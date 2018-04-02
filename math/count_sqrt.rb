@@ -2,20 +2,12 @@ class CountSqrt
 
 
   def count_sqrt(a,b)
-     count = 0
-     (a..b-1).each do |i|
-        j = 1
-        while j*j <= i
-           if j*j == 1
-               count +=  1
-               j += 1
-           end
-           i += 1
-        end
-
-
-     end
-     count
+    return 0 if b<=0 || b < a
+    return  1 if a ==0 || b == 1
+    if a <= 0
+      a = 1
+    end
+    Math.sqrt(b).to_i - Math.sqrt(a-1).to_i
 
   end
 

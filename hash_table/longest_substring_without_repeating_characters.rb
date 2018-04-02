@@ -33,7 +33,21 @@ class LongestSubstringWithoutRepeatingCharacters
     max_length
   end
 
+  def k_repeating_character(s, k)
+
+    s.chars.each do |value|
+      if s.chars.count(value) < k
+
+        end
+      end
+      s.size
+
+  end
+
+
 end
 
 l = LongestSubstringWithoutRepeatingCharacters.new
 p l.length_of_longest_substring('abbacedffg')
+
+p l.k_repeating_character('ababacbb', 3)

@@ -48,7 +48,7 @@ class SortAlg
       i = (first + last)/2
       if ary[i] == target
         return 'found'
-      elsif ary[i] < item
+      elsif ary[i] < target
         first = i+1
       else
         last = i - 1

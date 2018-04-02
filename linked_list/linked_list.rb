@@ -135,7 +135,7 @@ class LinkedList < Node
 
   def reverse_list_recursive(node=@head, prev=nil)
     if !node
-      return @head = prev
+       @head = prev
     else
       next_node = node.next
       node.next = prev
