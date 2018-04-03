@@ -34,8 +34,8 @@ class CountNumber
         return true
       elsif target < matrix[row][col]
         col -= 1  #向左移动
-      elsif  target > matrix[row][col]
-        row += 1
+      else
+        row += 1  #向下移动
       end
     end
      false

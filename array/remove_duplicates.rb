@@ -12,7 +12,7 @@ class RemoveDuplicates
       return nums.size if nums.size<2
       tail = 0
       nums[1..-1].each_with_index do |value,index|
-
+          p "#{nums[index]  }:#{value}"
           if nums[index] != value
              tail += 1
              nums[tail] = value
