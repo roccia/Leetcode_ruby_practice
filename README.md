@@ -1,3 +1,5 @@
 # Leetcode_ruby_practice
 
-Day-0: nothing to do
+yield and self yield
+yield  invoking your block
+yield self invoking block with current instance as parameter

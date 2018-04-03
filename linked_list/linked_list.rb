@@ -91,11 +91,11 @@ class LinkedList < Node
   end
 
   def find_node(value)
-    current_node = @head
-    while !current_node.nil?
-      return current_node if current_node.value == value
-      current_node = current_node.next
-    end
+     current_node = @head
+     while !current_node.nil?
+       return current_node if current_node.value == value
+       current_node = current_node.next
+     end
     'can not find '
   end
 
@@ -163,6 +163,75 @@ class LinkedList < Node
     end
     dummy.next
 
+  end
+
+
+  #Merge k sorted linked lists and return it as one sorted list.
+  # Analyze and describe its complexity.
+
+  # Time complexity : )O(Nlogk) wherek is the number of linked lists.
+  #
+  #     We can merge two sorted linked list in O(n)time where n is the total number of nodes
+  #     in two lists.
+  #     Sum up the merge process and we can get:O(Nlogk)
+  # Space complexity : O(1) We can merge two sorted linked lists in O(1)space.
+
+
+  def merge_k_lists(lists)
+    len = lists.size
+    return lists[0] if len == 1
+    interval = 1
+    while interval < len
+      (0..len).step(interval*2) do |i|
+        lists[i] = merge(lists[i],lists[i+interval])
+      end
+      interval *= 2
+    end
+    lists[0]
+  end
+
+  def merge(l1,l2)
+    head = point = Node.new(0)
+    while l1 && l2
+      if l1.value <= l2.value
+        point.next = l1
+        l1  = l1.next
+
+      else
+        point.next = l2
+        l2 = l1
+        l1 = point.next.next
+      end
+      point = point.next
+    end
+    if !l1
+      point.next = l2
+    else
+      point.next = l1
+    end
+
+    head.next
+  end
+
+  # Traverse all the linked lists and collect the values of the nodes into an array.
+  # Sort and iterate over this array to get the proper value of nodes.
+  # Create a new sorted linked list and extend it with the new nodes.
+  # O(nlogn)
+  def merge_k_lists_1(lists)
+    return [] if lists.length == 0
+
+    merged = []
+
+    lists.each do |list|
+      node = list
+
+      until node.nil? || node.value.nil?
+        merged << node.value
+        node = node.next
+      end
+    end
+
+    merged.sort
   end
 
 end
