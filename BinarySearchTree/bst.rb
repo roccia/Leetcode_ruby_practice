@@ -1,3 +1,14 @@
+class TreeNode
+  attr_accessor :value,:left,:right
+
+  def initialize(value)
+    @value = value
+    @left = nil
+    @right = nil
+  end
+end
+
+
 class BST < TreeNode
   attr_accessor :root
 
@@ -64,7 +75,7 @@ class BST < TreeNode
   def find_min_node(node)
     if node.left.nil?
       min_node = node
-      min_node
+
     else
       find_min_node(node.left)
     end
@@ -106,3 +117,22 @@ class BST < TreeNode
     res
   end
 end
+
+tree = TreeNode.new(3)
+tree.left = TreeNode.new(9)
+tree.right = TreeNode.new(20)
+tree.right.left = TreeNode.new(15)
+tree.right.right = TreeNode.new(7)
+p tree
+
+def max_depth(root)
+   return 0 if root.nil?
+    l = max_depth(root.left)
+    r = max_depth(root.right)
+    p "#{root.left},#{root.right}"
+   p "#{l} ,#{ r }"
+    [l,r].max + 1
+
+end
+
+p max_depth(tree)

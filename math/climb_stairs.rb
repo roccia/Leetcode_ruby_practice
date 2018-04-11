@@ -15,7 +15,17 @@ class ClimbStairs
     res[n-1]
   end
 
+  def climb_s(n)
+    n1 = n2 = 1
+
+    2.upto(n) do |i|
+      n1, n2 = n2, n1 + n2
+    end
+
+    n2
+  end
 end
 
 c = ClimbStairs.new
-c.climb(4 + 1, 2)
+#c.climb(5 , 1)
+p c.climb_s(19)
