@@ -1,7 +1,7 @@
 class Node
   attr_accessor :value, :next
 
-  def initialize(value,next_node=nil)
+  def initialize(value, next_node=nil)
     @value = value
     @next = next_node
   end
@@ -14,8 +14,8 @@ end
 class LinkedList < Node
   attr_accessor :head
 
-  def initialize
-    @head = Node.new(val, nil)
+  def initialize(value)
+    @head = Node.new(value, nil)
   end
 
   def add(value)
@@ -23,7 +23,7 @@ class LinkedList < Node
     while current.next != nil
       current = current.next
     end
-    current.next = Node.new(value,nil)
+    current.next = Node.new(value, nil)
   end
 
   def delete(value)
@@ -45,10 +45,10 @@ class LinkedList < Node
     middle.next = nil #set the next of middle node to null
     left = sort(head)
     right = sort(next_of_middle)
-    merge(left, right)
+    merge1(left, right)
   end
 
-  def merge(left, right)
+  def merge1(left, right)
     return right if left.nil?
     return left if right.nil?
     #Pick either left or right, and recur
@@ -96,16 +96,6 @@ class LinkedList < Node
   end
 
 
-  def print_list(head)
-    result = []
-    current = head
-    while !current.nil?
-      result << current.value
-      current = current.next
-    end
-    result
-  end
-
   def swap(head)
     if head && head.next
       next_node = head.next
@@ -131,7 +121,7 @@ class LinkedList < Node
 
   def reverse_list_recursive(node=@head, prev=nil)
     if !node
-       @head = prev
+      @head = prev
     else
       next_node = node.next
       node.next = prev
@@ -161,38 +151,131 @@ class LinkedList < Node
 
   end
 
+
+  #Merge k sorted linked lists and return it as one sorted list.
+  # Analyze and describe its complexity.
+
+  # Time complexity : )O(Nlogk) wherek is the number of linked lists.
+  #
+  #     We can merge two sorted linked list in O(n)time where n is the total number of nodes
+  #     in two lists.
+  #     Sum up the merge process and we can get:O(Nlogk)
+  # Space complexity : O(1) We can merge two sorted linked lists in O(1)space.
+
+
+  def merge_k_lists(lists)
+    len = lists.size
+    return lists[0] if len == 1
+    interval = 1
+    while interval < len
+      (0..len).step(interval*2) do |i|
+        lists[i] = merge(lists[i], lists[i+interval])
+      end
+      interval *= 2
+    end
+    lists[0]
+  end
+
+  def merge(l1, l2)
+    head = point = Node.new(0)
+    while l1 && l2
+      if l1.value <= l2.value
+        point.next = l1
+        l1 = l1.next
+
+      else
+        point.next = l2
+        l2 = l1
+        l1 = point.next.next
+      end
+      point = point.next
+    end
+    if !l1
+      point.next = l2
+    else
+      point.next = l1
+    end
+
+    head.next
+  end
+
+  # Traverse all the linked lists and collect the values of the nodes into an array.
+  # Sort and iterate over this array to get the proper value of nodes.
+  # Create a new sorted linked list and extend it with the new nodes.
+  # O(nlogn)
+  def merge_k_lists_1(lists)
+    return [] if lists.length == 0
+
+    merged = []
+
+    lists.each do |list|
+      node = list
+
+      until node.nil? || node.value.nil?
+        merged << node.value
+        node = node.next
+      end
+    end
+
+    merged.sort
+  end
+
+  def print_list
+    result = []
+    current = @head
+    while !current.nil?
+      result << current.value
+      current = current.next
+    end
+    result
+  end
+
+  def remove_dup(head)
+    current = head
+
+    while !current.nil? && !current.next.nil?
+       if current.next.value == current.value
+          current.next = current.next.next
+       else
+         current = current.next
+       end
+    end
+    head
+  end
+
+
 end
 
-list1 = LinkedList.new
-list1.add(15)
-list1.add(10)
-list1.add(5)
-list1.add(20)
-list1.add(3)
+list1 = LinkedList.new(1)
+list1.add(1)
+list1.add(1)
 list1.add(2)
-head1 = list1.head
-p list1.print_list(list1.head)
+list1.add(3)
+list1.add(3)
+list1.add(4)
+p list1.remove_dup(list1.head)
+p list1.print_list
 
-p list1.reverse_list
-list2 = LinkedList.new
-list2.add(1)
-list2.add(6)
-list2.add(11)
-list2.add(16)
-list2.add(21)
-list2.add(26)
-head2 = list2.head
-
-#list1.print_list(head1)
-#list2.print_list(head2)
-list1.head = list1.sort(head1)
-list2.head = list2.sort(head2)
-p list1.print_list(list1.head)
-p list2.print_list(list2.head)
-
-list3 = LinkedList.new
-p list3.head = list3.merge(list1.head, list2.head)
-p list3.print_list(list3.head)
+# p list1.reverse_list
+# list2 = LinkedList.new
+# list2.add(1)
+# list2.add(6)
+# list2.add(11)
+# list2.add(16)
+# list2.add(21)
+# list2.add(26)
+# head2 = list2.head
+#
+# #list1.print_list(head1)
+# #list2.print_list(head2)
+# list1.head = list1.sort(head1)
+# list2.head = list2.sort(head2)
+# p list1.print_list(list1.head)
+# p list2.print_list(list2.head)
+#
+# list3 = LinkedList.new
+# p list3.head = list3.merge(list1.head, list2.head)
+# p list3.print_list(list3.head)
 
 
 #new_list.print_list(new_list.head)
