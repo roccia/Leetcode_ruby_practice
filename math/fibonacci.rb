@@ -18,4 +18,4 @@ class Fibonacci
 end
 
 f = Fibonacci.new
-p f.get_n(9)
+p f.get_n(13)

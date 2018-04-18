@@ -1,10 +1,9 @@
 class SortAlg
 
   def bubble_sort(ary)
-    n = ary.size
     loop do
       swapped = false
-      (n-1).times do |i|
+      (ary.size-1).times do |i|
         if ary[i] > ary[i+1]
           ary[i], ary[i+1] = ary[i+1], ary[i]
           swapped = true

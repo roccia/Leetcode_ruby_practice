@@ -27,5 +27,5 @@ class ClimbStairs
 end
 
 c = ClimbStairs.new
-#c.climb(5 , 1)
-p c.climb_s(19)
+#p c.climb(5 , 1)
+p c.climb_s(13)

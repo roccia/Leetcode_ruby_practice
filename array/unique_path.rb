@@ -16,9 +16,19 @@ class UniquePath
     grid[m-1][n-1]
   end
 
+  def unique_path_2(obstacle_grid)
+      rows = obstacle_grid.size
+      cols = obstacle_grid[0].size
+      (0...rows).each do |i|
+        (0...cols).each do |j|
+
+        end
+      end
+  end
+
 
 end
 
 
 u = UniquePath.new()
-p u.unique_paths(3, 7)
+p u.unique_paths(3, 3)

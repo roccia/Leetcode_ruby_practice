@@ -7,6 +7,7 @@ class CheckPair
        hash = Hash.new
        res = []
        (0..ary.size-1).each do |i|
+         p hash
            temp = target - ary[i]
            if hash.has_key?(temp)
              p hash[temp]
@@ -49,6 +50,7 @@ class CheckPair
     hash[0] = 1
     (ary.size - 1).downto(0) do |i|
       sum += ary[i]
+      p hash
       if hash.has_key?(temp)
         count += hash[temp]
       end
@@ -60,5 +62,5 @@ end
 
 
 c = CheckPair.new
-p ary = [1,2,3,4,5]
-p c.check_pair_index(ary, 6)
+p ary = [1,2,3,4,5,6]
+p c.check_pair(ary, 6)

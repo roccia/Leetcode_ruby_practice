@@ -7,7 +7,7 @@ class Search_in_Rotated_Sorted_Array
   def search_rotated(nums, target)
     left = 0
     right = nums.size-1
-    while (left<=right)
+    while left<=right
       mid = (left+right)/2
       return mid if target == nums[mid]
       if nums[left] <= nums[mid]

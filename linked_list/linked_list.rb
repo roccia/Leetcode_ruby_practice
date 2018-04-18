@@ -1,3 +1,13 @@
+class TreeNode
+  attr_accessor :val,:left,:right
+
+  def initialize(val)
+    @val = val
+    @left = nil
+    @right = nil
+  end
+end
+
 class Node
   attr_accessor :value, :next
 
@@ -81,9 +91,11 @@ class LinkedList < Node
       if !fast.nil?
         slow = slow.next #第二部分的首部
         fast = fast.next
+
       end
     end
     slow
+
   end
 
   def find_node(value)
@@ -116,7 +128,7 @@ class LinkedList < Node
       prev_node = current_node
       current_node = next_node
     end
-    @head = prev_node
+    prev_node
   end
 
   def reverse_list_recursive(node=@head, prev=nil)
@@ -155,7 +167,7 @@ class LinkedList < Node
   #Merge k sorted linked lists and return it as one sorted list.
   # Analyze and describe its complexity.
 
-  # Time complexity : )O(Nlogk) wherek is the number of linked lists.
+  # Time complexity : )O(Nlogk) where k is the number of linked lists.
   #
   #     We can merge two sorted linked list in O(n)time where n is the total number of nodes
   #     in two lists.
@@ -243,18 +255,40 @@ class LinkedList < Node
     head
   end
 
+  def sorted_list_to_bst(head)
+    if !head
+      return
+    end
+    if !head.next
+      return TreeNode.new(head.val)
+    end
+    slow, fast = head, head.next.next
+    while fast and fast.next
+      fast = fast.next.next
+      slow = slow.next
+    end
+    mid = slow.next
+    slow.next = nil
+    root = TreeNode.new(mid.val)
+    root.left = sorted_list_to_bst(head)
+    root.right = sorted_list_to_bst(mid.next)
+    root
+  end
+
+
 
 end
 
+
 list1 = LinkedList.new(1)
-list1.add(1)
-list1.add(1)
 list1.add(2)
 list1.add(3)
-list1.add(3)
 list1.add(4)
-p list1.remove_dup(list1.head)
-p list1.print_list
+list1.add(5)
+#p list1.remove_dup(list1.head)
+p list1.get_middle(list1.head)
+p list1.sorted_list_to_bst(list1.head)
+#p list1.reverse_list
 
 # p list1.reverse_list
 # list2 = LinkedList.new
