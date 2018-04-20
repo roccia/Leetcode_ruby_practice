@@ -275,6 +275,32 @@ class LinkedList < Node
     root
   end
 
+  def is_palindrome(head)
+     fast = slow = head
+     #find mid
+     while fast && fast.next
+       fast = fast.next.next
+       slow = slow.next
+     end
+     second_half = nil
+     # reverse second half
+     while slow
+         nxt = slow.next
+         slow.next = second_half
+         second_half = slow
+         slow = nxt
+     end
+
+     #compare
+     while second_half && head
+         if second_half.val != head.val
+            return false
+         end
+         second_half = second_half.next
+         head = head.next
+     end
+       true
+  end
 
 
 end

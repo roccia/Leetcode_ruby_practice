@@ -10,6 +10,7 @@ class TopKFrequentElements
    nums.each do |n|
      hash[n] += 1
    end
+   p hash
    result = []
    sorted = hash.sort_by{|k,v| v}
 
@@ -22,9 +23,22 @@ class TopKFrequentElements
     result
 
   end
+
+  def most_common_word(paragraph, banned)
+    ary = paragraph.downcase.gsub(/[-,.?:;'"!`]/,'').split(' ')
+    hash = Hash.new(0)
+    ary.each{|n| hash[n] += 1 }
+    banned.each{|b| hash.delete(b) if hash.has_key?(b)}
+    hash.sort_by{|_,v|v}.pop.first
+
+  end
+
 end
 
 
 t = TopKFrequentElements.new
 nums = [1,1,1,2,2,3]
-p t.top_k_frequent(nums, 2)
+ t.top_k_frequent(nums, 2)
+s = "Bob hit a ball, the hit BALL flew far after it was hit."
+b = ['hit']
+p t.most_common_word(s,b)
