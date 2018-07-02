@@ -30,4 +30,4 @@ class ArrayPartition
 end
 
 a = ArrayPartition.new
-p a.array_pair_sum([1,2,3,2])
+p a.array_sum([1,2,3,2])

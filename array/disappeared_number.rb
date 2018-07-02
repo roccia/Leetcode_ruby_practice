@@ -18,10 +18,11 @@ class DisappearedNumber
        nums.each_with_index do |_,i|
            val = nums[i].abs - 1
            if nums[val] > 0
+             p nums[val]
               nums[val] = -nums[val]
            end
        end
-
+       p nums
        nums.each_with_index do |_,i|
           if nums[i] > 0
              res << i + 1

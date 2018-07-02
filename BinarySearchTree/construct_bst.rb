@@ -38,12 +38,15 @@ class ConstructBST
     # 递归构建当前根结点的左子树，左子树的元素个数：index-is+1个
     # 左子树对应的前序遍历的位置在[ps+1, ps+index-is]
     # 左子树对应的中序遍历的位置在[ins, index-1]
-    new_tree.left = build(pre_order, pre_start + 1, pre_start + index - in_start, in_order, in_start, index- 1)
+    new_tree.left = build(pre_order, pre_start + 1,
+                          pre_start + index - in_start,
+                          in_order, in_start, index- 1)
 
     # 递归构建当前根结点的右子树，右子树的元素个数：ie-index个
     # 右子树对应的前序遍历的位置在[ps+index-is+1, pe]
     # 右子树对应的中序遍历的位置在[index+1, ie]
-    new_tree.right = build(pre_order, pre_start + index - in_start +1, pre_end, in_order, index+1, in_end)
+    new_tree.right = build(pre_order, pre_start + index - in_start +1,
+                           pre_end, in_order, index+1, in_end)
     new_tree.to_ary
   end
 end
